@@ -8,97 +8,107 @@
     <meta name="description" content="The ultimate collection of 30+ free online tools on a single page. Convert images, format JSON, generate hashes, calculate EMI, manage text, and much more. Fast, secure, and privacy-focused.">
     <meta name="keywords" content="online tools, free tools, image converter, image compressor, image resizer, image cropper, video converter, audio converter, audio trimmer, age calculator, emi calculator, sip calculator, tip calculator, countdown timer, qr code generator, password generator, word counter, case converter, find and replace, lorem ipsum generator, base64 encoder, base64 decoder, color picker, text to speech, speech to text, json formatter, unit converter, bmi calculator, timer, stopwatch, hash generator, md5 generator, sha256 generator, markdown previewer, url encoder, url decoder, random number generator, free online utilities, developer tools, client-side tools, web tools, free utilities">
     
-    <!-- ✅ درست Favicon Link -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One Page Tools</title>
-
-  <!-- ✅ Favicon Link -->
-  <link rel="icon" href="https://raw.githubusercontent.com/OnePageTools/One-Page-Tools/main/logo.jpg" type="image/jpeg">
-
-  <!-- ✅ Stylesheets & Scripts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.11.0/dist/ffmpeg.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.1/dist/purify.min.js"></script>
-
-  <!-- ✅ Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --background-color: #1a1a2e;
-      --header-background: #16213e;
-      --tool-card-background: #0f3460;
-      --accent-color: #53a8b6;
-      --text-color: #e3e3e3;
-      --heading-color: #ffffff;
-      --button-hover-color: #63c2d1;
-      --font-family: 'Poppins', sans-serif;
-      --card-shadow: rgba(0, 0, 0, 0.2);
-      --accent-shadow: rgba(83, 168, 182, 0.3);
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: var(--font-family); background-color: var(--background-color); color: var(--text-color); line-height: 1.7; padding-bottom: 50px; }
-
-    header { 
-      background-color: var(--header-background);
-      background-image: linear-gradient(rgba(22, 33, 62, 0.85), rgba(22, 33, 62, 0.85)), url(https://cdn.jsdelivr.net/gh/OnePageTools/One-Page-Tools/header-image.jpg.png);
-      background-size: cover;
-      background-position: center;
-      color: var(--heading-color); 
-      padding: 2rem 1rem; 
-      text-align: center; 
-      box-shadow: 0 4px 15px var(--card-shadow); 
-      margin-bottom: 2rem; 
-      border-bottom: 3px solid var(--accent-color);
-      position: relative;
-    }
-
-    .header-content {
-      display: flex; align-items: center; justify-content: center;
-      gap: 20px; flex-wrap: wrap;
-    }
-
-    .logo {
-      width: 80px; height: 80px;
-      border-radius: 50%;
-      border: 3px solid var(--accent-color);
-    }
-
-    header h1 {
-      font-weight: 700;
-      font-size: 2.8rem;
-      letter-spacing: 1px;
-      margin: 0;
-    }
-
-    @media (max-width: 768px) {
-      header h1 { font-size: 2.2rem; }
-      .header-content { flex-direction: column; }
-    }
-  </style>
+    <link rel="icon" href="https://raw.githubusercontent.com/OnePageTools/One-Page-Tools/main/logo.jpg.png
+" type="image/jpeg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.11.0/dist/ffmpeg.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.1/dist/purify.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --background-color: #1a1a2e;
+            --header-background: #16213e;
+            --tool-card-background: #0f3460;
+            --accent-color: #53a8b6;
+            --text-color: #e3e3e3;
+            --heading-color: #ffffff;
+            --button-hover-color: #63c2d1;
+            --font-family: 'Poppins', sans-serif;
+            --card-shadow: rgba(0, 0, 0, 0.2);
+            --accent-shadow: rgba(83, 168, 182, 0.3);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-family); background-color: var(--background-color); color: var(--text-color); line-height: 1.7; padding-bottom: 50px; }
+        
+        header { 
+            background-color: #16213e;
+            /* YAHAN APNA HEADER IMAGE KA GITHUB URL DAALEIN */
+            background-image: linear-gradient(rgba(22, 33, 62, 0.85), rgba(22, 33, 62, 0.85)), url('YAHAN_APNA_HEADER_IMAGE_KA_GITHUB_URL_DAALEIN');
+            background-size: cover;
+            background-position: center;
+            color: var(--heading-color); 
+            padding: 2rem 1rem; 
+            text-align: center; 
+            box-shadow: 0 4px 15px var(--card-shadow); 
+            margin-bottom: 2rem; 
+            border-bottom: 3px solid var(--accent-color);
+            position: relative;
+        }
+        .header-content { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .logo { width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--accent-color); }
+        header h1 { font-weight: 700; font-size: 2.8rem; letter-spacing: 1px; margin: 0; }
+        main { max-width: 1400px; margin: 0 auto; padding: 0 1.5rem; }
+        .tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.8rem; }
+        .tool-card { background-color: var(--tool-card-background); padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px var(--card-shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); opacity: 0; animation: fadeInUp 0.5s ease-out forwards; }
+        .tool-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px var(--accent-shadow); }
+        .tool-card .icon-container { font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem; }
+        .tool-card h2 { font-size: 1.4rem; margin-bottom: 0.75rem; color: var(--heading-color); }
+        .tool-card p { font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1; opacity: 0.8; }
+        .tool-button { background-color: var(--accent-color); color: var(--heading-color); border: none; padding: 0.75rem 1.25rem; border-radius: 8px; font-weight: 600; cursor: pointer; text-align: center; transition: all 0.3s ease; align-self: flex-start; }
+        .tool-button:hover { background-color: var(--button-hover-color); transform: scale(1.05); }
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); animation: fadeIn 0.3s ease; }
+        .modal-content { background-color: var(--header-background); margin: 5% auto; padding: 30px; border-radius: 15px; width: 90%; max-width: 750px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); position: relative; animation: slideIn 0.4s ease-out; border: 1px solid rgba(255,255,255,0.2); }
+        .close-button { color: var(--text-color); position: absolute; top: 15px; right: 20px; font-size: 2rem; font-weight: bold; transition: color 0.2s ease, transform 0.2s ease; }
+        .close-button:hover, .close-button:focus { color: var(--accent-color); text-decoration: none; cursor: pointer; transform: scale(1.2); }
+        #modalTitle { color: var(--accent-color); }
+        .modal-body { margin-top: 1.5rem; color: var(--text-color); }
+        .modal-body label { display: block; margin-bottom: 0.5rem; font-weight: 600; opacity: 0.9; }
+        .modal-body input, .modal-body textarea, .modal-body select { width: 100%; padding: 0.8rem; margin-bottom: 1rem; border-radius: 8px; border: 1px solid var(--tool-card-background); background-color: var(--background-color); color: var(--text-color); font-family: var(--font-family); font-size: 1rem; transition: border-color 0.3s, box-shadow 0.3s; }
+        .modal-body input:focus, .modal-body textarea:focus, .modal-body select:focus { outline: none; border-color: var(--accent-color); box-shadow: 0 0 0 3px var(--accent-shadow); }
+        .modal-body button { background-color: var(--accent-color); color: var(--heading-color); border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; margin-top: 0.5rem; margin-right: 0.5rem; }
+        .modal-body button:hover { background-color: var(--button-hover-color); transform: translateY(-2px); }
+        .modal-body button:disabled { background-color: #555; cursor: not-allowed; }
+        .result-area { margin-top: 1rem; padding: 1rem; background-color: var(--background-color); border-radius: 8px; border: 1px solid var(--tool-card-background); white-space: pre-wrap; word-wrap: break-word; }
+        .footer-section { text-align: center; padding: 3rem 1rem; }
+        #openArticleBtn { background-color: transparent; color: var(--accent-color); border: 2px solid var(--accent-color); padding: 0.8rem 1.8rem; border-radius: 50px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; font-size: 1rem; }
+        #openArticleBtn:hover { background-color: var(--accent-color); color: var(--header-background); box-shadow: 0 4px 20px var(--accent-shadow); transform: translateY(-3px); }
+        .modal-alert { margin-top: 1rem; padding: 0.75rem; border-radius: 5px; font-weight: bold; color: white; display: none; }
+        .modal-alert.success { background-color: #28a745; }
+        .modal-alert.error { background-color: #dc3545; }
+        .modal-alert.info { background-color: #17a2b8; }
+        .tabs { display:flex; margin-bottom:1rem; border-bottom:1px solid var(--tool-card-background); }
+        .tab-button { background:none; border:none; color: var(--text-color); padding: 0.75rem 1rem; cursor:pointer; font-size: 1rem; font-family: var(--font-family); transition: background-color 0.3s, color 0.3s; }
+        .tab-button.active { background-color: var(--accent-color); color: var(--header-background); border-bottom: 2px solid var(--accent-color); font-weight: bold; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideIn { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) { 
+            header h1 { font-size: 2.2rem; } 
+            .modal-content { width: 95%; margin: 10% auto; padding: 20px; } 
+            .header-content { flex-direction: column; }
+        }
+    </style>
 </head>
 <body>
-  <header>
+    <header>
     <div class="header-content">
-      <!-- ✅ LOGO Image ✅ -->
-      <img src="https://raw.githubusercontent.com/OnePageTools/One-Page-Tools/main/logo.jpg" alt="One Page Tools Logo" class="logo">
-      <div>
-        <h1>One Page Tools</h1>
-        <p style="opacity: 0.8;">Your Ultimate Collection of 30+ Free Online Utilities</p>
-      </div>
+        <img src="https://raw.githubusercontent.com/OnePageTools/One-Page-Tools/main/logo.jpg.png" alt="One Page Tools Logo" class="logo">
+        <div>
+            <h1>One Page Tools</h1>
+            <p style="opacity: 0.8;">Your Ultimate Collection of 30+ Free Online Utilities</p>
+        </div>
     </div>
-  </header>
-
+</header>
 
     <main>
         <div class="tool-grid"></div>
@@ -480,3 +490,4 @@
     </script>
 </body>
 </html>
+
